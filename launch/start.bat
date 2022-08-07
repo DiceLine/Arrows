@@ -1,18 +1,19 @@
 @echo off
+chcp 1251
 
 java -version
 if %errorlevel% == 9009 (
-	echo У вас не установлена Java 8
-	echo Или путь к Java не добавлен в переменную Path
+	echo ╙ трё эх єёЄрэютыхэр Java 8
+	echo ╚ыш яєЄ№ ъ Java эх фюсртыхэ т яхЁхьхээє■ Path
 	pause
 	exit
 )
 
 :BEGIN
-set /p arrows="Введите кол-во стрел для вывода на экран: "
+set /p arrows="┬тхфшЄх ъюы-тю ёЄЁхы фы  т√тюфр эр ¤ъЁрэ: "
 java Arrows %arrows%
-echo Хочешь увидеть еще стрелы))
-echo Если да, то введи 1, ыыы)
+echo ╒юўх°№ єтшфхЄ№ х∙х ёЄЁхы√))
+echo ┼ёыш фр, Єю ттхфш 1, √√√)
 set /p arrows=""
 if %arrows% == 1 (
 	goto BEGIN
